@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: rgb(18, 18, 18);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border-radius: .4rem;
+    outline: none;
+    border: none;
+    color: #000;
+    transition: all .3s;
+}
+
+.btn:hover {
+    color: #000000cc;
+}
+
+.nav__links {
+    width: 100%;
+    height: 8vh;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links ul {
+    display: flex;
+}
+
+.nav__links ul li {
+    padding: 0 1.25rem;
+    transition: all .3s;
+    position: relative;
+}
+
+.nav__links ul li a.active::after,
+.nav__links ul li a:hover::after {
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: rgb(0, 102, 255);
+    display: inline-block;
+}
+
+.nav__links ul li a.active,
+.nav__links ul li a:hover {
+    color: #fff;
+    transition: all .5s;
+}
+
+.nav__links ul li a {
+    color: rgb(180, 180, 180);
+    font-size: .9375rem;
+    transition: all .3s;
+}
+
+.nav__bottom {
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__bottom a {
+    color: rgb(180, 180, 180);
+}
+
+.nav__bottom a.avail {
+    color: #fff;
+}
+
+.discover {
+    width: 100%;
+    padding: 0 10%;
+    padding-top: 8rem;
+    display: flex;
+    padding-bottom: 4rem;
+}
+
+.discover .carousel__box {
+    width: 80%;
+    height: 75vh;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.discover .carousel__box .carousel__card {
+    width: 100%;
+    height: 100%;
+    animation: move 60s infinite;
+}
+
+.discover .carousel__box .carousel__card img {
+    width: 100%;
+    height: 100%;
+}
+
+.discover .carousel__box .carousel__card .carousel__content h4 {
+    color: white;
+    z-index: 999;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    /* background: ; */
+}
+
+.discover .carousel__box .carousel__card .carousel__content p {
+    color: #fff;
+    hyphens: auto;
+}
+
+.discover .carousel__box .carousel__card .carousel__content {
+    position: absolute;
+    bottom: 10%;
+    width: 30%;
+    margin: 0 3rem;
+}
+
+.btn-white {
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+.discover .carousel__games {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.discover .carousel__games .carousel__card--small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rosybrown; */
+    width: 150%;
+    height: 16%;
+    /* background-color: khaki; */
+    display: flex;
+    align-items: center;
+    /* flex: 1; */
+    transition: all .3s;
+}
+
+.discover .carousel__games .carousel__card--small .carousel__img {
+    width: 40%;
+    height: 70%;
+}
+
+.discover .carousel__games .carousel__card--small:hover {
+    background-color: rgba(119, 119, 119, .7);
+    border-radius: .5rem;
+}
+
+.discover .carousel__games .carousel__card--small .carousel__img img {
+    width: 2rem;
+    height: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.discover .carousel__games .carousel__card--small h4 {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: .8rem;
+    margin-left: -1.5rem;
+    font-weight: 100;
+}
+
+.sale {
+    padding: 0 10%;
+    margin-bottom: 4rem;
+}
+
+.sale .heading {
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.sale .card__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sale .card__container .sale__card {
+    width: 19%;
+}
+
+.sale .card__container .sale__card .sale__card--image {
+    width: 100%;
+    border-radius: .4rem;
+    /* overflow: hidden !important; */
+}
+
+.sale .card__container .sale__card .sale__card--image img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+}
+
+.sale .card__container .sale__card .sale__card--content h6 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+.sale .card__container .sale__card .sale__card--content p {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: rgba(245, 245, 245, 0.6);
+}
+
+.sale .card__container .sale__card .sale__card--price {
+    margin-top: 1rem;
+}
+
+.sale .card__container .sale__card .sale__card--price button {
+    font-size: .8rem;
+    padding: 0.5rem;
+    border-radius: .2rem;
+    background-color: rgb(0, 102, 255);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sale .card__container .sale__card .sale__card--price span:nth-child(2) {
+    text-decoration: line-through;
+    color: rgb(180, 180, 180);
+    padding: .5rem;
+}
+
+.sale .card__container .sale__card .sale__card--price span:nth-child(3) {
+    color: #fff;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0%);
+    }
+    20% {
+        transform: translateY(-100%);
+    }
+    40% {
+        transform: translateY(-200%);
+    }
+    60% {
+        transform: translateY(-300%);
+    }
+    80% {
+        transform: translateY(-400%);
+    }
+    90% {
+        transform: translateY(-500%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

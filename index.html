@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Sign in to your account</title>
+</head>
+
+<body onload="preloading()">
+    <div id="preloader">
+        <video src="./video/video-preloader-4.mp4" autoplay loop></video>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="logo"><img src="./images/logo.png" alt="" /></div>
+
+            <h6 class="logo-heading">sign in with a gaming idiots account</h6>
+
+            <form class="inputs" action="page.php" method="POST">
+                <input type="email" placeholder="Email Address" name="email" required />
+                <!-- <span class="check-message">Required</span> -->
+                <input type="password" placeholder="Password" name="password" required />
+                <!-- <span class="check-message">Required</span> -->
+
+                <div class="assets">
+                    <input type="checkbox" id="check" />
+                    <label for="check">Remember me</label>
+                    <a href="#">forgot your password</a>
+                </div>
+                <button class="btn" disabled>log in now</button>
+            </form>
+
+            <div class="privacy">
+                <a href="#">privacy policy</a>
+                <span>dont have an account?<a href="#">sign up</a></span>
+                <span>Back to<a href="#"> all sign in options</a></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var preloader = document.getElementById('preloader')
+
+        function preloading() {
+            preloader.style.display = "none"
+        }
+
+        $(".inputs input").focusout(function() {
+            if ($(this).val() == "") {
+                $(this).css("border", "2px solid #FF0000");
+                m
+            } else {
+                $(this).css("border", "2px solid #777");
+            }
+        })
+
+        $(".inputs input").keyup(function() {
+            var inputs = $(".inputs input");
+            if (inputs[0].value != "" && inputs[1].value) {
+                $(".btn").attr("disabled", false);
+                $(".btn").addClass("active")
+            } else {
+                $(".btn").attr("disabled", true);
+                $(".btn").removeClass("active")
+            }
+        })
+    </script>
+</body>
+
+</html>
