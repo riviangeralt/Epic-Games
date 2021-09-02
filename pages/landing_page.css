@@ -32,16 +32,37 @@ header {
     transition: all .3s;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
     color: #000000cc;
+}
+
+.nav__links,
+.free__games .free__games--container .free__card,
+.new__games .new__games--container .new__card,
+.free__games .free__games--container .free__games--header,
+.nav__bottom,
+.sale .card__container,
+.card__container,
+.two__games {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__bottom,
+.discover,
+.sale,
+.two__games,
+.free__games,
+.new__games,
+.recently__updated {
+    padding: 0 10%;
 }
 
 .nav__links {
     width: 100%;
     height: 8vh;
     background-color: #2a2a2a;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -83,9 +104,6 @@ header {
     height: 12vh;
     width: 100%;
     background-color: rgb(18, 18, 18);
-    padding: 0 10%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -99,7 +117,6 @@ header {
 
 .discover {
     width: 100%;
-    padding: 0 10%;
     padding-top: 8rem;
     display: flex;
     padding-bottom: 4rem;
@@ -130,7 +147,6 @@ header {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: capitalize;
-    /* background: ; */
 }
 
 .discover .carousel__box .carousel__card .carousel__content p {
@@ -156,38 +172,40 @@ header {
     flex-direction: column;
 }
 
-.discover .carousel__games .carousel__card--small {
+.discover .carousel__games .carousel__card--small,
+.carousel__card--small {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rosybrown; */
     width: 150%;
     height: 16%;
-    /* background-color: khaki; */
     display: flex;
     align-items: center;
-    /* flex: 1; */
     transition: all .3s;
 }
 
-.discover .carousel__games .carousel__card--small .carousel__img {
+.discover .carousel__games .carousel__card--small .carousel__img,
+.carousel__card--small .carousel__img {
     width: 40%;
     height: 70%;
 }
 
-.discover .carousel__games .carousel__card--small:hover {
+.discover .carousel__games .carousel__card--small:hover,
+.carousel__games .carousel__card--small:hover {
     background-color: rgba(119, 119, 119, .7);
     border-radius: .5rem;
 }
 
-.discover .carousel__games .carousel__card--small .carousel__img img {
+.discover .carousel__games .carousel__card--small .carousel__img img,
+.carousel__card--small .carousel__img img {
     width: 2rem;
     height: 100%;
     border-radius: .5rem;
     overflow: hidden;
 }
 
-.discover .carousel__games .carousel__card--small h4 {
+.discover .carousel__games .carousel__card--small h4,
+.carousel__card--small h4 {
     text-transform: capitalize;
     color: #fff;
     font-size: .8rem;
@@ -195,12 +213,8 @@ header {
     font-weight: 100;
 }
 
-.sale {
-    padding: 0 10%;
-    margin-bottom: 4rem;
-}
-
-.sale .heading {
+.sale .heading,
+.heading {
     text-transform: uppercase;
     font-size: .9rem;
     color: #fff;
@@ -208,21 +222,76 @@ header {
     margin-bottom: 1rem;
 }
 
-.sale .card__container {
+.sale .card__container,
+.card__container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.sale .card__container .sale__card {
+.sale .card__container .sale__card,
+.recently__updated .card__container .recently__updated__card {
     width: 19%;
+    cursor: pointer;
 }
 
-.sale .card__container .sale__card .sale__card--image {
+.sale .card__container .sale__card .sale__card--image,
+.recently__updated .card__container .recently__updated__card .recently__updated--image {
     width: 100%;
+    height: 17.4375rem;
     border-radius: .4rem;
-    /* overflow: hidden !important; */
+    background-size: cover;
+    transition: all .3s;
+    margin-bottom: 1rem;
+    background-repeat: no-repeat;
+}
+
+.sale .card__container .sale__card .sale__card--image-1 {
+    background-image: url('/images/card__image-1.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.sale .card__container .sale__card .sale__card--image-2 {
+    background-image: url('/images/card__image-2.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.sale .card__container .sale__card .sale__card--image-3 {
+    background-image: url('/images/card__image-3.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.sale .card__container .sale__card .sale__card--image-4 {
+    background-image: url('/images/card__image-4.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.sale .card__container .sale__card .sale__card--image-5 {
+    background-image: url('/images/card__image-5.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.recently__updated .card__container .recently__updated__card .recently__updated--image-1 {
+    background-image: url('/images/recently__updated-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.recently__updated .card__container .recently__updated__card .recently__updated--image-2 {
+    background-image: url('/images/recently__updated-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.recently__updated .card__container .recently__updated__card .recently__updated--image-3 {
+    background-image: url('/images/recently__updated-3.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.recently__updated .card__container .recently__updated__card .recently__updated--image-4 {
+    background-image: url('/images/recently__updated-4.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.recently__updated .card__container .recently__updated__card .recently__updated--image-5 {
+    background-image: url('/images/recently__updated-5.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.sale .card__container .sale__card .sale__card--image:hover,
+.two__games .game__sale .game__sale--image:hover,
+.recently__updated .card__container .recently__updated--image:hover,
+.free__games .free__games--container .free__card .free__games--card .free__games--image:hover,
+.new__games .new__games--container .new__card .new__games--card .new__games--image:hover {
+    background-blend-mode: multiply;
+    z-index: 1;
 }
 
 .sale .card__container .sale__card .sale__card--image img {
@@ -232,7 +301,8 @@ header {
     border-radius: .4rem;
 }
 
-.sale .card__container .sale__card .sale__card--content h6 {
+.sale .card__container .sale__card .sale__card--content h6,
+.content h6 {
     font-size: 1rem;
     text-transform: capitalize;
     color: #fff;
@@ -240,17 +310,21 @@ header {
     margin-bottom: 0.3rem;
 }
 
-.sale .card__container .sale__card .sale__card--content p {
+.sale .card__container .sale__card .sale__card--content p,
+.content p {
     font-size: 1rem;
     text-transform: capitalize;
     color: rgba(245, 245, 245, 0.6);
+    line-height: 1.5;
 }
 
-.sale .card__container .sale__card .sale__card--price {
+.sale .card__container .sale__card .sale__card--price,
+.price {
     margin-top: 1rem;
 }
 
-.sale .card__container .sale__card .sale__card--price button {
+.sale .card__container .sale__card .sale__card--price button,
+.price button {
     font-size: .8rem;
     padding: 0.5rem;
     border-radius: .2rem;
@@ -261,14 +335,110 @@ header {
     cursor: pointer;
 }
 
-.sale .card__container .sale__card .sale__card--price span:nth-child(2) {
+.sale .card__container .sale__card .sale__card--price span:nth-child(2),
+.price span:nth-child(2) {
     text-decoration: line-through;
     color: rgb(180, 180, 180);
     padding: .5rem;
 }
 
-.sale .card__container .sale__card .sale__card--price span:nth-child(3) {
+.sale .card__container .sale__card .sale__card--price span:nth-child(3),
+.price span:nth-child(3) {
     color: #fff;
+}
+
+.two__games .game__sale {
+    width: 49%;
+    cursor: pointer;
+}
+
+.two__games .game__sale .game__sale--image {
+    width: 100%;
+    height: 19.4375rem;
+    background-size: cover;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.two__games .game__sale .games__one {
+    background-image: url('/images/sale__game-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.two__games .game__sale .games__two {
+    background-image: url('/images/sale__game-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.free__games,
+.new__games,
+.recently__updated,
+.sale,
+.two__games {
+    margin-bottom: 4rem;
+}
+
+.free__games .free__games--container {
+    width: 100%;
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.free__games .free__games--container .free__games--header {
+    align-items: center;
+}
+
+.free__games .free__games--container .free__games--header h5 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.free__games .free__games--container .free__games--header .btn-view {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.free__games .free__games--container .free__card,
+.new__games .new__games--container .new__card {
+    margin-top: 1rem;
+}
+
+.free__games .free__games--container .free__card .free__games--card,
+.new__games .new__games--container .new__card .new__games--card {
+    width: 49%;
+}
+
+.free__games .free__games--container .free__card .free__games--card .free__games--image,
+.new__games .new__games--container .new__card .new__games--card .new__games--image {
+    width: 100%;
+    height: 17.1875rem;
+    background-size: cover;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.free__games .free__games--container .free__card .free__games--card .free__games--image-1 {
+    background-image: url('/images/free__games-1.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    ;
+}
+
+.free__games .free__games--container .free__card .free__games--card .free__games--image-2 {
+    background-image: url('/images/free__games-2.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    ;
+}
+
+.new__games .new__games--container .new__card .new__games--card .new__games--image-1 {
+    background-image: url('/images/new__games-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    ;
+}
+
+.new__games .new__games--container .new__card .new__games--card .new__games--image-2 {
+    background-image: url('/images/new__games-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    ;
 }
 
 @keyframes move {
