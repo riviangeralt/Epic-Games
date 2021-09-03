@@ -55,7 +55,9 @@ header {
 .two__games,
 .free__games,
 .new__games,
-.recently__updated {
+.recently__updated,
+.new__to__store,
+.most__popular {
     padding: 0 10%;
 }
 
@@ -229,13 +231,17 @@ header {
 }
 
 .sale .card__container .sale__card,
-.recently__updated .card__container .recently__updated__card {
+.recently__updated .card__container .recently__updated__card,
+.new__to__store .card__container .new__to__store__card,
+.most__popular .card__container .most__popular__card {
     width: 19%;
     cursor: pointer;
 }
 
 .sale .card__container .sale__card .sale__card--image,
-.recently__updated .card__container .recently__updated__card .recently__updated--image {
+.recently__updated .card__container .recently__updated__card .recently__updated--image,
+.new__to__store .card__container .new__to__store__card .new__to__store--image,
+.most__popular .card__container .most__popular__card .most__popular--image {
     width: 100%;
     height: 17.4375rem;
     border-radius: .4rem;
@@ -285,11 +291,53 @@ header {
     background-image: url('../images/recently__updated-5.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
+.new__to__store .card__container .new__to__store__card .new__to__store--image-1 {
+    background-image: url('../images/new__to__store-1.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.new__to__store .card__container .new__to__store__card .new__to__store--image-2 {
+    background-image: url('../images/new__to__store-2.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.new__to__store .card__container .new__to__store__card .new__to__store--image-3 {
+    background-image: url('../images/new__to__store-3.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.new__to__store .card__container .new__to__store__card .new__to__store--image-4 {
+    background-image: url('../images/new__to__store-4.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.new__to__store .card__container .new__to__store__card .new__to__store--image-5 {
+    background-image: url('../images/new__to__store-5.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.most__popular .card__container .most__popular__card .most__popular--image-1 {
+    background-image: url('../images/most__popular-1.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.most__popular .card__container .most__popular__card .most__popular--image-2 {
+    background-image: url('../images/most__popular-2.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.most__popular .card__container .most__popular__card .most__popular--image-3 {
+    background-image: url('../images/most__popular-3.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.most__popular .card__container .most__popular__card .most__popular--image-4 {
+    background-image: url('../images/most__popular-4.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
+.most__popular .card__container .most__popular__card .most__popular--image-5 {
+    background-image: url('../images/most__popular-5.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+}
+
 .sale .card__container .sale__card .sale__card--image:hover,
 .two__games .game__sale .game__sale--image:hover,
 .recently__updated .card__container .recently__updated--image:hover,
 .free__games .free__games--container .free__card .free__games--card .free__games--image:hover,
-.new__games .new__games--container .new__card .new__games--card .new__games--image:hover {
+.new__games .new__games--container .new__card .new__games--card .new__games--image:hover,
+.new__to__store .card__container .new__to__store__card .new__to__store--image:hover,
+.most__popular .card__container .most__popular__card .most__popular--image:hover {
     background-blend-mode: multiply;
     z-index: 1;
 }
@@ -372,7 +420,9 @@ header {
 .new__games,
 .recently__updated,
 .sale,
-.two__games {
+.two__games,
+.new__to__store,
+.most__popular {
     margin-bottom: 4rem;
 }
 
