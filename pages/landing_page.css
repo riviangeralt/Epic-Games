@@ -246,43 +246,43 @@ header {
 }
 
 .sale .card__container .sale__card .sale__card--image-1 {
-    background-image: url('/images/card__image-1.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/card__image-1.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .sale .card__container .sale__card .sale__card--image-2 {
-    background-image: url('/images/card__image-2.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/card__image-2.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .sale .card__container .sale__card .sale__card--image-3 {
-    background-image: url('/images/card__image-3.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/card__image-3.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .sale .card__container .sale__card .sale__card--image-4 {
-    background-image: url('/images/card__image-4.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/card__image-4.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .sale .card__container .sale__card .sale__card--image-5 {
-    background-image: url('/images/card__image-5.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/card__image-5.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .recently__updated .card__container .recently__updated__card .recently__updated--image-1 {
-    background-image: url('/images/recently__updated-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/recently__updated-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .recently__updated .card__container .recently__updated__card .recently__updated--image-2 {
-    background-image: url('/images/recently__updated-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/recently__updated-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .recently__updated .card__container .recently__updated__card .recently__updated--image-3 {
-    background-image: url('/images/recently__updated-3.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/recently__updated-3.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .recently__updated .card__container .recently__updated__card .recently__updated--image-4 {
-    background-image: url('/images/recently__updated-4.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/recently__updated-4.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .recently__updated .card__container .recently__updated__card .recently__updated--image-5 {
-    background-image: url('/images/recently__updated-5.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/recently__updated-5.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .sale .card__container .sale__card .sale__card--image:hover,
@@ -361,11 +361,11 @@ header {
 }
 
 .two__games .game__sale .games__one {
-    background-image: url('/images/sale__game-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/sale__game-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .two__games .game__sale .games__two {
-    background-image: url('/images/sale__game-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/sale__game-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
 }
 
 .free__games,
@@ -422,22 +422,22 @@ header {
 }
 
 .free__games .free__games--container .free__card .free__games--card .free__games--image-1 {
-    background-image: url('/images/free__games-1.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/free__games-1.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
     ;
 }
 
 .free__games .free__games--container .free__card .free__games--card .free__games--image-2 {
-    background-image: url('/images/free__games-2.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/free__games-2.webp'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
     ;
 }
 
 .new__games .new__games--container .new__card .new__games--card .new__games--image-1 {
-    background-image: url('/images/new__games-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/new__games-1.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
     ;
 }
 
 .new__games .new__games--container .new__card .new__games--card .new__games--image-2 {
-    background-image: url('/images/new__games-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
+    background-image: url('../images/new__games-2.jpg'), linear-gradient(to bottom, #202020, rgb(196, 196, 196));
     ;
 }
 
