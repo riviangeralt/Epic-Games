@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *,
-::after,
-::before {
+ ::after,
+ ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -68,6 +68,7 @@ header {
     height: 8vh;
     background-color: #2a2a2a;
     align-items: center;
+    position: relative;
 }
 
 .nav__links ul {
@@ -83,8 +84,9 @@ header {
 .nav__links ul li a.active::after,
 .nav__links ul li a:hover::after {
     position: absolute;
-    top: 1.8rem;
+    /* top: 1.8rem; */
     left: 0;
+    bottom: -1rem;
     content: "";
     height: 5px;
     width: 100%;
@@ -238,6 +240,7 @@ header {
 .most__popular .card__container .most__popular__card {
     width: 19%;
     cursor: pointer;
+    position: relative;
 }
 
 .sale .card__container .sale__card .sale__card--image,
@@ -251,6 +254,7 @@ header {
     transition: all .3s;
     margin-bottom: 1rem;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .sale .card__container .sale__card .sale__card--image-1 {
@@ -398,11 +402,6 @@ header {
     color: #fff;
 }
 
-.two__games .game__sale {
-    width: 49%;
-    cursor: pointer;
-}
-
 .two__games .game__sale .game__sale--image {
     width: 100%;
     height: 19.4375rem;
@@ -460,8 +459,11 @@ header {
 }
 
 .free__games .free__games--container .free__card .free__games--card,
-.new__games .new__games--container .new__card .new__games--card {
+.new__games .new__games--container .new__card .new__games--card,
+.two__games .game__sale {
     width: 49%;
+    cursor: pointer;
+    position: relative;
 }
 
 .free__games .free__games--container .free__card .free__games--card .free__games--image,
@@ -502,7 +504,7 @@ header {
 .catalog .catalog__container .catalog__image {
     background: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0, 120, 242)) rgb(0, 0, 0);
     width: 50%;
-    height: 19.4375rem;
+    /* height: 19.4375rem; */
     background-size: cover;
     border-radius: .5rem;
     margin-bottom: 1rem;
@@ -629,6 +631,21 @@ header {
     transition: all .3s;
 }
 
+.add__button {
+    position: absolute;
+    color: white;
+    background-color: rgba(8, 8, 8, .5);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    right: .5rem;
+    top: .5rem;
+    border: .2rem solid #fff;
+}
+
 @keyframes move {
     0% {
         transform: translateY(0%);
@@ -650,5 +667,108 @@ header {
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nav__links ul li a.active::after,
+    .nav__links ul li a:hover::after {
+        bottom: -1.6rem;
+    }
+    .discover {
+        padding-top: 12rem;
+    }
+    .discover .carousel__box {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .discover .carousel__box {
+        height: 40vh;
+    }
+    .discover .carousel__box .carousel__card .carousel__content {
+        width: 80%;
+    }
+    .sale .card__container,
+    .card__container {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 32% 32% 32%;
+        row-gap: 2rem;
+        align-items: baseline;
+    }
+    .sale .card__container .sale__card,
+    .recently__updated .card__container .recently__updated__card,
+    .new__to__store .card__container .new__to__store__card,
+    .most__popular .card__container .most__popular__card {
+        width: 100%;
+    }
+    .catalog .catalog__container .btn {
+        width: 50%;
+    }
+    .footer__middle .lists {
+        width: 60%;
+    }
+    .footer__section-2 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .nav__bottom,
+    .discover,
+    .sale,
+    .two__games,
+    .free__games,
+    .new__games,
+    .recently__updated,
+    .new__to__store,
+    .most__popular,
+    .catalog {
+        padding: 0 2%;
+    }
+    .nav__links ul {
+        display: none;
+    }
+    .discover {
+        display: flex;
+        flex-direction: column;
+        padding-top: 12rem;
+        margin-bottom: 4rem;
+    }
+    .discover .carousel__box {
+        width: 100%;
+        height: 45vh;
+    }
+    .discover .carousel__games {
+        flex-direction: row;
+        margin-top: 1.5rem;
+    }
+    .discover .carousel__games .carousel__card--small,
+    .carousel__card--small {
+        width: 19%;
+    }
+    .discover .carousel__games .carousel__card--small .carousel__img,
+    .carousel__card--small .carousel__img {
+        width: 20%;
+    }
+    .discover .carousel__games .carousel__card--small h4,
+    .carousel__card--small h4 {
+        margin-left: 1rem;
+    }
+    .sale .card__container,
+    .card__container {
+        display: grid;
+        grid-template-rows: 35% 35%;
+        grid-template-columns: 48% 48%;
+        justify-items: center;
+        margin-bottom: 12rem;
+    }
+    .sale .card__container .sale__card .sale__card--image,
+    .recently__updated .card__container .recently__updated__card .recently__updated--image,
+    .new__to__store .card__container .new__to__store__card .new__to__store--image,
+    .most__popular .card__container .most__popular__card .most__popular--image {
+        height: 34.4375rem;
     }
 }
